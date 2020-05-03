@@ -1,0 +1,11 @@
+In this system,
+1-	Use a light sensor (TSL251RD) to read the intensity of light. The output voltage of sensor is converted by
+	a12-bit ADC to digital format in MSP_1. This data is sent over UART to MSP_2.
+2-	MSP_2 analyses this data. It sends over the received data to DAC via SPI channel. It also sends the data
+	to seven segment-display. In the meanwhile, if light intensity (irradiance) is greater than 150 W/cm2, then
+3-	MSP_2 generates a buzzer with a frequency of 500Hz and 75% duty cycle.
+	Keep the transmission rate of UART to 115200 bps.
+	Keep the transmission rate of SPI to 256 Kbps.
+4-	MSP_2 can resend the same value to DAC, if new values haven’t arrived from the UART channel.
+	If (irradiance) is less than 50 W/cm2 then MSP_2 sends a special code (0xA5) to MSP_1. Upon receiving
+	this code MSP_1 blinks the LED with a 5 Hz frequency and 50% duty cycle.

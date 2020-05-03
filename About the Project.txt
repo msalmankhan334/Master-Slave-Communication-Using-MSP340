@@ -1,0 +1,17 @@
+The Project is about to implement a system , based on MSP340 Microcontrollers.
+What to learn from the Project:
+1-	Master-Slave Communication (i.e MSP430_1 and MSP430_2)
+2-	UART Communication and SPI Communication
+3-	Analog to Digital Converter and Digital to Analog Converter.
+
+Software Used for Simulation is: Proteus, Output and Sketch of the Project is Provided.
+
+How to Run:
+You can open the project directly in proteus software.
+Start: Build/Run
+Note: You should have to download MSP430 compiler, and set "PATH" in Proteus; tell the directly where is MSP430 compiler is.
+in my case it is: c/msp430/bin, but yours may be different from Mine.
+
+contact me: msalmankhan334@gmail.com
+
+keep Learning: Embedded Systems in C
